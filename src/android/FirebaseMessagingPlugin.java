@@ -163,6 +163,14 @@ public class FirebaseMessagingPlugin extends ReflectiveCordovaPlugin {
     }
 
     @CordovaMethod
+    private void cancelAll(CallbackContext callbackContext) {
+        //Context context = cordova.getActivity().getApplicationContext();
+        Context context = cordova.getActivity();
+        NotificationManagerCompat.from(context).cancelAll();
+        callbackContext.success();
+    }
+
+    @CordovaMethod
     private void getBadge(CallbackContext callbackContext) {
         Context context = cordova.getActivity();
         SharedPreferences settings = context.getSharedPreferences("badge", Context.MODE_PRIVATE);

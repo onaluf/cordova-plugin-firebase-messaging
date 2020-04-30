@@ -47,6 +47,11 @@ module.exports = {
             exec(resolve, reject, PLUGIN_NAME, "getBadge", []);
         });
     },
+    cancelAll: function() {
+        return new Promise(function(resolve, reject) {
+            exec(resolve, reject, PLUGIN_NAME, "cancelAll", []);
+        });
+    },
     requestPermission: function(options) {
         return new Promise(function(resolve, reject) {
             if (options) {

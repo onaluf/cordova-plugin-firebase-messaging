@@ -9,6 +9,7 @@
 - (void)getToken:(CDVInvokedUrlCommand*)command;
 - (void)setBadge:(CDVInvokedUrlCommand*)command;
 - (void)getBadge:(CDVInvokedUrlCommand*)command;
+- (void)cancelAll:(CDVInvokedUrlCommand*)command;
 - (void)subscribe:(CDVInvokedUrlCommand*)command;
 - (void)unsubscribe:(CDVInvokedUrlCommand*)command;
 - (void)onMessage:(CDVInvokedUrlCommand*)command;

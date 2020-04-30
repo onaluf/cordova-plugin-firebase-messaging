@@ -123,6 +123,10 @@
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
+(void)cancelAll:(CDVInvokedUrlCommand *)command {
+    // TODO!
+}
+
 - (void)subscribe:(CDVInvokedUrlCommand *)command {
     NSString* topic = [NSString stringWithFormat:@"%@", [command.arguments objectAtIndex:0]];
 
